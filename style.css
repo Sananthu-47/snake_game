@@ -1,0 +1,124 @@
+*,body
+        {
+            padding: 0;
+            box-sizing: border-box;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        .loading-page
+        {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(22, 105, 177);
+            font-size: 20px;
+            color: white;
+            font-weight: 600;
+        }
+
+        .game-container
+        {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+        }
+
+        #border {
+            background-color: rgb(71, 134, 189);
+            margin: auto;
+        }
+
+        #border .game-name
+        {
+            color: white;
+            position: relative;
+            margin-top: 30px;
+            font-size: 30px;
+            text-align: center;
+        }
+
+        #score
+        {
+            color: whitesmoke;
+            font-size: 28px;
+        }
+
+        .overlay
+        {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100Vh;
+            display: none;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(45, 54, 45, 0.151);
+            z-index: 4;
+        }
+
+        .overlay .score-modal
+        {
+            width: 250px;
+            height: 30%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+        }
+
+        .overlay .score-modal .final
+        {
+            font-size: 22px;
+            font-weight: 600;
+            display: flex;
+        }
+
+        .controller
+        {
+            position: relative;
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .controller .buttons
+        {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            font-size: 30px;
+            font-weight: 900;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(230, 189, 55);
+            color: aliceblue;
+        }
+
+        .left
+        {
+            position: relative;
+            left: -60px;
+            top: -10px;
+        }
+
+        .right
+        {
+            position: relative;
+            left: 60px;
+            top: -60px;
+        }
+
+        .bottom
+        {
+            position: relative;
+            top: -70px;
+        }

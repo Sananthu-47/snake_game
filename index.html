@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Snake game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="loading-page">
+        <span>Loading...</span>
+    </div>
+    <div class="game-container">
+        <div id="border">
+            <h2 class="game-name">Snake game</h2>
+            <h2 class="score-hold">Score: <span id="score">0</span></h2>
+        </div>
+        <canvas style="background-color: rgb(7, 5, 20);position: relative;left: 50%;transform: translateX(-50%);" id="canvas"></canvas>
+        <div class="controller">
+            <div class="buttons up">&uarr;</div>
+            <div class="buttons left">&larr;</div>
+            <div class="buttons right">&rarr;</div>
+            <div class="buttons bottom">&darr;</div>
+        </div>
+    </div>
+    <div class="overlay">
+        <div class="score-modal">
+            <span class="final">Oops! you are out</span><br>
+            <span class="final">You scored:<span class='scored final'> </span></span><br>
+            <span class="final">Click here to restart</span>
+        </div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+
+</html>
