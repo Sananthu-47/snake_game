@@ -15,6 +15,7 @@ window.onload = ()=>{
     const gameBorder = document.getElementById('border');
     const overlay = document.querySelector('.overlay');
     const scoreShow = document.getElementById('score');
+    const controller = document.querySelector('.controller');
     const foodImage = new Image();
 
     const foods = ['images/apple.png','images/cherry.png','images/orange.png'];
@@ -36,6 +37,8 @@ window.onload = ()=>{
         cWidth=cvs.width=300;
         cHeight=cvs.height=300;
         gameBorder.style.width=cWidth+"px";
+        controller.style.position='relative';
+        controller.style.top='30px';
         box=30;
         loopMax=10;
     }else
@@ -60,7 +63,7 @@ window.onload = ()=>{
         gameBorder.style.width=cWidth+"px";
         box=40;
         loopMax=20;
-        document.querySelector('.controller').style.display='none';
+        controller.style.display='none';
     }
 
 
@@ -115,7 +118,7 @@ window.onload = ()=>{
         y: Math.floor(Math.random() * ((loopMax-1) - 1 + 1) + 1)
     }
 
-    let snakeLen = 8;
+    let snakeLen = 4;
 
     function drawSnake(x, y, color, colorB) {
         ctx.fillStyle = color;
